@@ -2,6 +2,7 @@ import "../styles.css";
 import { FaHtml5 } from "react-icons/fa";
 import { SiWhatsapp, SiGmail } from "react-icons/si";
 import { useState } from "react";
+import axios from "axios"
 
 export const Contact = () => {
 const [connect,setConnect]=useState({
@@ -21,6 +22,11 @@ const [connect,setConnect]=useState({
   const handleClick=(event)=>{
     event.preventDefault();
     console.log(connect)
+    const newVisit={
+      email:connect.email,
+      mobile:connect.mobile
+    }
+    axios.post('http://localhost:3000/create',newVisit)
   }
   return (
     <div id="contact" >
