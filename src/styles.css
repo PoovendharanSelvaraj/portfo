@@ -25,7 +25,7 @@ body {
 
 .homeicon {
   text-decoration: underline;
-  color:  gray;
+  color: gray;
 }
 /* .scrol {
   border: none;
@@ -50,9 +50,8 @@ a:hover {
   margin-right: 1.5em;
 }
 .nav-div1 > ul > li > a {
-  
   text-decoration: none;
-  color:gray;
+  color: gray;
 }
 
 .navbar label {
@@ -61,7 +60,7 @@ a:hover {
 /* .nav-div1 > div:hover {
   border-bottom: 1px solid black;
 } */
-.dark-mode{
+.dark-mode {
   background-color: rgb(35, 40, 62);
   color: rgb(144, 160, 217);
 }
@@ -129,12 +128,12 @@ input:checked + .slider:before {
 }
 
 /* About section */
-.about div {
+/* .about div {
   border: 1px solid red;
-}
+} */
 .about {
   margin-top: 75px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   height: 500px;
   display: grid;
@@ -154,12 +153,12 @@ input:checked + .slider:before {
   grid-template-rows: 30% 40% 20%;
   justify-content: center;
 }
-.name  {
+.name {
   font-size: xx-large;
   font-weight: bold;
-  color:gray;
+  color: gray;
 }
-.name:hover{
+.name:hover {
   color: black;
 }
 .span {
@@ -199,17 +198,15 @@ input:checked + .slider:before {
   padding: 15px 0px;
 }
 
-
-
 /* Projects */
-.projects > div {
+/* .projects > div {
   border: 1px solid red;
-}
+} */
 .proje {
   margin-top: 50px;
 }
 .projects {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   margin-top: 10px;
   width: 90%;
@@ -234,14 +231,14 @@ input:checked + .slider:before {
 /* skills */
 
 .skills {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: auto;
   margin-top: 50px;
   width: 90%;
   height: 400px;
 }
-.skills  {
-  border: 1px solid red;
+.skills {
+  /* border: 1px solid red; */
   margin: auto;
   margin-top: 50px;
   width: 50%;
@@ -254,32 +251,32 @@ input:checked + .slider:before {
 /* Contacts */
 
 .contacts {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 90%;
   height: 300px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: 80% ;
+  grid-template-rows: 80%;
 }
 .contacts > div > a {
   color: gray;
 }
-.footer{
-  width:100%;
+.footer {
+  width: 100%;
   text-align: center;
 }
 .form {
   width: 100%;
   /* margin-left: 100px; */
-  
+
   color: gray;
   height: 200px;
 }
 form > input {
   height: 20px;
 }
-form{
+form {
   height: 200px;
   display: grid;
 }
@@ -298,7 +295,7 @@ form{
 
 @media only screen and (max-width: 700px) and (max-width: 420px) {
   .navbar {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 90%;
     height: 5em;
     margin: auto;
@@ -315,7 +312,7 @@ form{
   }
   .about {
     margin-top: 50px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     background-color: transparent;
     height: 500px;
