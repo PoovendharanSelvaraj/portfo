@@ -1,6 +1,6 @@
 import "../styles.css";
 import { FaArrowUp, FaHtml5 } from "react-icons/fa";
-import { SiWhatsapp, SiGmail } from "react-icons/si";
+import { SiWhatsapp, SiGmail, SiTwitter } from "react-icons/si";
 import { useState } from "react";
 import axios from "axios";
 
@@ -34,19 +34,25 @@ export const Contact = () => {
       <div className="contacts">
         <div>
           <a href="">
-            <SiWhatsapp fontSize="70px" />
+            <SiWhatsapp fontSize="60px" />
           </a>
           <h3>+918883489091</h3>
         </div>
         <div>
+          <a href="">
+            <SiTwitter fontSize="60px" />
+          </a>
+          <h3>Povendharan KMS</h3>
+        </div>
+        <div>
           <a href="https://mail.google.com/">
-            <SiGmail fontSize="70px" />
+            <SiGmail fontSize="60px" />
           </a>
           <h3>poovendharan@gmail.com</h3>
         </div>
         <div className="form">
           <form onSubmit={handleClick} action="">
-            <h3>Contact</h3>
+            <h3>To Connect</h3>
             <input
               onChange={handleChange}
               name="email"
