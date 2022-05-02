@@ -310,7 +310,9 @@ form:hover {
   color: white;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 0px) {
+/* media */
+
+@media only screen and (max-width: 700px) and (min-width: 50px) {
   .navbar {
     /* border: 1px solid black; */
     width: 90%;
@@ -415,5 +417,110 @@ form:hover {
   }
   .footer {
     margin-top: 350px;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 699px) {
+  .navbar {
+    /* border: 1px solid black; */
+    width: 90%;
+
+    height: 6em;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav-div1 {
+    background-color: transparent;
+    margin: auto;
+    font-size: medium;
+    /* height: 10px; */
+    font-weight: 700;
+    padding: 1em 0em 0em 20em;
+  }
+  .nav-div1 > ul {
+    margin-left: -15em;
+  }
+  /* .navbar {
+    border: 1px solid black;
+    width: 90%;
+    height: 5em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  } */
+  .nav-div1 > div {
+    background-color: transparent;
+    border: 0;
+    font-size: small;
+    height: 10px;
+    font-weight: 700;
+    padding: 1.5em 0;
+  }
+
+  .about {
+    margin-top: 50px;
+    /* border: 1px solid black; */
+
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+  }
+  .aboutDes {
+    display: grid;
+    grid-template-rows: 30% 70% 20%;
+  }
+  #project {
+    margin-top: 200px;
+  }
+  .projects {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-template-rows: 70%;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  .card > p {
+    font-size: 20px;
+  }
+
+  /* skills */
+
+  .skills {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+  }
+  #skills {
+    margin-top: 300px;
+  }
+  .contacts {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50% 50%;
+  }
+  .footer {
+    margin-top: 150px;
   }
 }
