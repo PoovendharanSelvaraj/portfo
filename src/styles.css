@@ -411,7 +411,7 @@ form:hover {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: 100%;
+    grid-template-rows: 50%;
   }
   .footer {
     margin-top: 350px;
