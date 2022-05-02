@@ -1,10 +1,10 @@
 {
-  "name": "portfolio",
+  "name": "pflio",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:3001",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.19",
     "@fortawesome/free-solid-svg-icons": "6.1.1",

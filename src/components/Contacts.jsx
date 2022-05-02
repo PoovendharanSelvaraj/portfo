@@ -1,37 +1,37 @@
 import "../styles.css";
-import { FaHtml5 } from "react-icons/fa";
+import { FaArrowUp, FaHtml5 } from "react-icons/fa";
 import { SiWhatsapp, SiGmail } from "react-icons/si";
 import { useState } from "react";
-import axios from "axios"
+import axios from "axios";
 
 export const Contact = () => {
-const [connect,setConnect]=useState({
-  email:"",
-  mobile:""
-});
-  const handleChange=(event)=>{
-        const {name,value}=event.target;
+  const [connect, setConnect] = useState({
+    email: "",
+    mobile: ""
+  });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
 
-        setConnect((connect=>{
-          return {
-            ...connect, 
-            [name] : value
-          }
-        }))
-  }
-  const handleClick=(event)=>{
+    setConnect((connect) => {
+      return {
+        ...connect,
+        [name]: value
+      };
+    });
+  };
+  const handleClick = (event) => {
     event.preventDefault();
-    console.log(connect)
-    const newVisit={
-      email:connect.email,
-      mobile:connect.mobile
-    }
-    axios.post('http://localhost:3000/create',newVisit)
-  }
+    console.log(connect);
+    const newVisit = {
+      email: connect.email,
+      mobile: connect.mobile
+    };
+    axios.post("http://localhost:3001/create", newVisit);
+  };
   return (
-    <div id="contact" >
+    <div id="contact">
       <h1>Contact</h1>
-      <div  className="contacts">
+      <div className="contacts">
         <div>
           <a href="">
             <SiWhatsapp fontSize="70px" />
@@ -46,17 +46,31 @@ const [connect,setConnect]=useState({
         </div>
         <div className="form">
           <form onSubmit={handleClick} action="">
-            <h3>Connect with me</h3>
-            <input onChange={handleChange} name="email" type="email" value={connect.email} placeholder="Enter your mail address" />
-            <input onChange={handleChange} name="mobile" type="number" value={connect.mobile} placeholder="Enter your number"/>           
-            <input className="submit" type="submit" />         
+            <h3>Contact</h3>
+            <input
+              onChange={handleChange}
+              name="email"
+              type="email"
+              value={connect.email}
+              placeholder="Enter your mail address"
+            />
+            <input
+              onChange={handleChange}
+              name="mobile"
+              type="tele"
+              value={connect.mobile}
+              placeholder="Enter your number"
+            />
+            <input className="submit" type="submit" />
           </form>
         </div>
-        
       </div>
       <div className="footer">
         <h5>created by Povendharan S</h5>
-        </div>
+        <a href="#navbar">
+          <FaArrowUp />
+        </a>
+      </div>
     </div>
   );
 };

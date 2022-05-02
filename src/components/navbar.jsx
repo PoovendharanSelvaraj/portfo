@@ -10,9 +10,9 @@ export const Navbar = () => {
     element.classList.toggle("btn");
   };
   return (
-    <div className="navbar">
+    <div id="navbar" className="navbar">
       <div className="homeicon" style={{ margin: "10px 0px" }}>
-        <FaBriefcase  fontSize="50px" />
+        <FaBriefcase fontSize="50px" />
       </div>
       <div className="nav-div1">
         <ul>

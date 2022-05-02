@@ -12,7 +12,7 @@ export default function App() {
       <About />
       <Projects />
       <Skills />
-      <Contact/>
+      <Contact />
     </div>
   );
 }

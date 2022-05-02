@@ -11,8 +11,8 @@ mongoose.connect(
   "mongodb+srv://pooga:12345@cluster0.qaybd.mongodb.net/visitorDB"
 );
 
-app.use("/", require("./route"));
+app.use("/", require("./router/route"));
 
-app.listen(3000, function () {
+app.listen(3001, function () {
   console.log("listening port 3000");
 });
