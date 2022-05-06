@@ -5,13 +5,17 @@ import { GrBriefcase, GrHtml5 } from "react-icons/gr";
 import { SiCss3, SiJavascript, SiReact, SiRedux } from "react-icons/si";
 
 export const About = () => {
- 
- 
   return (
     <div className="aboutim" style={{ width: "90%", margin: "auto" }}>
       <div className="about">
         <div className="profile">
-          <img src={photo} alt="" />
+          <img
+            src={photo}
+            alt="myPhoto"
+            className="alter"
+            width="600px"
+            height="400px"
+          />
         </div>
         <div className="aboutDes">
           <div>
@@ -27,7 +31,15 @@ export const About = () => {
             </p>
           </div>
           <div className="git">
-            <a className="button" rel="noreferrer"  href="https://drive.google.com/file/d/13_NHgW49KWm_cqI75iCappRrzxcbh5ra/view?usp=sharing" target="_blank">resume</a>
+            <span className="button">
+              <a
+                rel="noreferrer"
+                href="https://drive.google.com/file/d/13_NHgW49KWm_cqI75iCappRrzxcbh5ra/view?usp=sharing"
+                target="_blank"
+              >
+                resume
+              </a>
+            </span>
             <a
               className="giticon"
               href="https://github.com/PoovendharanSelvaraj"
