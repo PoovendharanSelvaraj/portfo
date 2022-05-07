@@ -5,6 +5,11 @@ import { GrBriefcase, GrHtml5 } from "react-icons/gr";
 import { SiCss3, SiJavascript, SiReact, SiRedux } from "react-icons/si";
 
 export const About = () => {
+  const handleClick = () =>
+    window.open(
+      "https://drive.google.com/file/d/13_NHgW49KWm_cqI75iCappRrzxcbh5ra/view?usp=sharing",
+      "_blank"
+    );
   return (
     <div className="aboutim" style={{ width: "90%", margin: "auto" }}>
       <div className="about">
@@ -31,15 +36,16 @@ export const About = () => {
             </p>
           </div>
           <div className="git">
-            <span className="button">
+            <div className="button" onClick={handleClick}>
               <a
+                className="resume"
                 rel="noreferrer"
                 href="https://drive.google.com/file/d/13_NHgW49KWm_cqI75iCappRrzxcbh5ra/view?usp=sharing"
                 target="_blank"
               >
                 resume
               </a>
-            </span>
+            </div>
             <a
               className="giticon"
               href="https://github.com/PoovendharanSelvaraj"

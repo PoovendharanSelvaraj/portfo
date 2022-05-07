@@ -2,6 +2,8 @@ import "../styles.css";
 import { FaBriefcase, FaNodeJs, FaGithub, FaRocket } from "react-icons/fa";
 import { GrBriefcase, GrHtml5, GrDeploy } from "react-icons/gr";
 import { SiCss3, SiJavascript, SiReact, SiRedux } from "react-icons/si";
+import IndiaMartNew from "../images/IndiaMartNew.png";
+import tanishq from "../images/tanishq.png";
 
 export const Projects = () => {
   return (
@@ -9,7 +11,8 @@ export const Projects = () => {
       <h1>Projects</h1>
       <div className="projects">
         <div className="card">
-          <div>
+          <img src={IndiaMartNew} alt="" />
+          <div className="card-text">
             <h2>Indiamart Cloned</h2>
             <p>
               This is India's largest online marketplace which connects buyers
@@ -17,28 +20,29 @@ export const Projects = () => {
             </p>
             <h3>Front End Project | Collaborative</h3>
             <h4>Html | Css | Bootstrap | JavaScript</h4>
-          </div>
-          <div>
-            <a
-              className="giticon"
-              href="https://github.com/PoovendharanSelvaraj/India_mart"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              className="giticon"
-              href="https://sad-elion-e4c9b5.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaRocket />
-            </a>
+            <div>
+              <a
+                className="cardIcon"
+                href="https://github.com/PoovendharanSelvaraj/India_mart"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className="cardIcon"
+                href="https://sad-elion-e4c9b5.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaRocket />
+              </a>
+            </div>
           </div>
         </div>
         <div className="card">
-          <div>
+          <img src={tanishq} alt="" />
+          <div className="card-text">
             <h2>Tanishq Cloned</h2>
             <p>
               Tanishq is an Indian jewellery brand and a division of Titan
@@ -50,25 +54,24 @@ export const Projects = () => {
             <h4>
               Html | Css | Bootstrap | JavaScript | MongoDb | Express | NodeJs
             </h4>
-          </div>
-
-          <div>
-            <a
-              className="giticon"
-              href="https://github.com/PoovendharanSelvaraj/Tanishq"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub />
-            </a>
-            <a
-              className="giticon"
-              href="https://heuristic-minsky-e408f0.netlify.app/user"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaRocket />
-            </a>
+            <div>
+              <a
+                className="cardIcon"
+                href="https://github.com/PoovendharanSelvaraj/Tanishq"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub />
+              </a>
+              <a
+                className="cardIcon"
+                href="https://heuristic-minsky-e408f0.netlify.app/user"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaRocket />
+              </a>
+            </div>
           </div>
         </div>
       </div>
